@@ -22,6 +22,8 @@ GPIO.setup(valveB, GPIO.OUT) #valve 2
 # GPIO.setup(valveC, GPIO.OUT) #valve 3
 GPIO.setup(pump, GPIO.OUT) #pump
 
+if button == high:
+omxc = Popen(['omxplayer', '-b', movie1])
 
 def lowPressure(channel):
     print ("falling edge on 11")
